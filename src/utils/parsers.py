@@ -69,7 +69,7 @@ def genome_genome_lengths_from_chromosomes_lengths(chr_lengths):
     return lengths
 
 
-def get_genomes_contain_blocks_grimm(grimm_file):
+def get_genomes_contain_blocks_grimm(grimm_file, allowed_blocks):
     genomes, blocks = set(), set()
 
     with open(grimm_file) as f:
@@ -83,9 +83,10 @@ def get_genomes_contain_blocks_grimm(grimm_file):
         data = GRIMMReader.parse_data_string(ls[i + 1])[1]
         genomes.add(name)
         for _, block in data:
-            blocks.add(int(block))
-            block_genome_count[int(block)][name] += 1
-        genomes_to_blocks[(name, chromo)] = Counter([block for _, block in data])
+            if int(block) in allowed_blocks:
+                blocks.add(int(block))
+                block_genome_count[int(block)][name] += 1
+        genomes_to_blocks[(name, chromo)] = Counter([block for _, block in data if int(block) in allowed_blocks])
         # genomes_to_blocks[name] += Counter([block for _, block in data])
 
     return list(sorted(genomes)), list(sorted(blocks)), block_genome_count, genomes_to_blocks
