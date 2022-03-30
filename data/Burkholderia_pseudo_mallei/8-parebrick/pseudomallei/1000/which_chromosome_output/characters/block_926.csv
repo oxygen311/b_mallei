@@ -1,6 +1,7 @@
 strain,character_state,character_state_annotation
 BUMA.1121.00014,1,chromosomes: 1
 BUMA.1121.00058,1,chromosomes: 1
+BUMA.1121.00112,1,chromosomes: 1
 BUMA.1121.00068,0,no copies
 BUMA.1121.00003,0,no copies
 BUMA.1121.00100,0,no copies
@@ -19,7 +20,6 @@ BUMA.1121.00045,0,no copies
 BUMA.1121.00060,0,no copies
 BUMA.1121.00098,0,no copies
 BUMA.1121.00107,0,no copies
-BUMA.1121.00112,0,no copies
 BUMA.1121.00007,0,no copies
 BUMA.1121.00097,0,no copies
 BUMA.1121.00027,0,no copies

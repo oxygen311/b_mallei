@@ -1,32 +1,32 @@
 strain,character_state,character_state_annotation
-BUMA.1121.00034,0,adjacency exists
-BUMA.1121.00086,3,inversion between 56h-58t and 39t-36h
-BUMA.1121.00038,4,inversion between 56h-58t and 39h-40t
-BUMA.1121.00024,0,adjacency exists
+BUMA.1121.00010,3,inversion between 56h-58t and 67t-66h
+BUMA.1121.00085,0,adjacency exists
+BUMA.1121.00048,4,inversion between 56h-58t and 39h-40t
+BUMA.1121.00040,0,adjacency exists
 BUMA.1121.00050,0,adjacency exists
-BUMA.1121.00046,0,adjacency exists
-BUMA.1121.00054,4,inversion between 56h-58t and 39h-40t
-BUMA.1121.00044,0,adjacency exists
-BUMA.1121.00026,0,adjacency exists
-BUMA.1121.00036,0,adjacency exists
-BUMA.1121.00022,0,adjacency exists
-BUMA.1121.00030,0,adjacency exists
 BUMA.1121.00004,0,adjacency exists
-BUMA.1121.00087,3,inversion between 56h-58t and 39t-36h
-BUMA.1121.00052,0,adjacency exists
+BUMA.1121.00020,0,adjacency exists
+BUMA.1121.00032,0,adjacency exists
 BUMA.1121.00006,4,inversion between 56h-58t and 39h-40t
 BUMA.1121.00042,0,adjacency exists
-BUMA.1121.00048,4,inversion between 56h-58t and 39h-40t
-BUMA.1121.00020,0,adjacency exists
-BUMA.1121.00002,5,inversion between 56h-58t and 67t-66h
-BUMA.1121.00013,6,inversion between 56h-58t and 61h-62t
-BUMA.1121.00032,0,adjacency exists
-BUMA.1121.00028,0,adjacency exists
-BUMA.1121.00019,0,adjacency exists
-BUMA.1121.00040,0,adjacency exists
-BUMA.1121.00008,0,adjacency exists
+BUMA.1121.00034,0,adjacency exists
+BUMA.1121.00026,0,adjacency exists
+BUMA.1121.00013,5,inversion between 56h-58t and 61h-62t
+BUMA.1121.00054,4,inversion between 56h-58t and 39h-40t
+BUMA.1121.00036,0,adjacency exists
+BUMA.1121.00046,0,adjacency exists
+BUMA.1121.00030,0,adjacency exists
+BUMA.1121.00052,0,adjacency exists
 BUMA.1121.00081,4,inversion between 56h-58t and 39h-40t
-BUMA.1121.00010,5,inversion between 56h-58t and 67t-66h
-BUMA.1121.00085,0,adjacency exists
+BUMA.1121.00022,0,adjacency exists
+BUMA.1121.00008,0,adjacency exists
+BUMA.1121.00044,0,adjacency exists
 BUMA.1121.00017,0,adjacency exists
+BUMA.1121.00024,0,adjacency exists
+BUMA.1121.00028,0,adjacency exists
+BUMA.1121.00002,3,inversion between 56h-58t and 67t-66h
+BUMA.1121.00087,6,inversion between 56h-58t and 39t-36h
+BUMA.1121.00019,0,adjacency exists
+BUMA.1121.00086,6,inversion between 56h-58t and 39t-36h
 BUMA.1121.00015,7,inversion between 56h-58t and 32h-29h
+BUMA.1121.00038,4,inversion between 56h-58t and 39h-40t

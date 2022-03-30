@@ -1,5 +1,6 @@
 strain,character_state,character_state_annotation
 BUMA.1121.00001,1,chromosomes: 1
+BUMA.1121.00003,1,chromosomes: 1
 BUMA.1121.00005,1,chromosomes: 1
 BUMA.1121.00007,1,chromosomes: 1
 BUMA.1121.00009,1,chromosomes: 1
@@ -10,16 +11,16 @@ BUMA.1121.00016,1,chromosomes: 1
 BUMA.1121.00018,1,chromosomes: 1
 BUMA.1121.00021,1,chromosomes: 1
 BUMA.1121.00023,1,chromosomes: 1
-BUMA.1121.00025,2,chromosomes: 2
+BUMA.1121.00025,1,chromosomes: 1
 BUMA.1121.00027,1,chromosomes: 1
-BUMA.1121.00029,2,chromosomes: 2
+BUMA.1121.00029,1,chromosomes: 1
 BUMA.1121.00031,1,chromosomes: 1
 BUMA.1121.00033,1,chromosomes: 1
 BUMA.1121.00035,1,chromosomes: 1
 BUMA.1121.00037,1,chromosomes: 1
-BUMA.1121.00039,2,chromosomes: 2
-BUMA.1121.00041,2,chromosomes: 2
-BUMA.1121.00043,2,chromosomes: 2
+BUMA.1121.00039,1,chromosomes: 1
+BUMA.1121.00041,1,chromosomes: 1
+BUMA.1121.00043,1,chromosomes: 1
 BUMA.1121.00045,1,chromosomes: 1
 BUMA.1121.00047,1,chromosomes: 1
 BUMA.1121.00049,1,chromosomes: 1
@@ -29,7 +30,7 @@ BUMA.1121.00055,1,chromosomes: 1
 BUMA.1121.00056,1,chromosomes: 1
 BUMA.1121.00057,1,chromosomes: 1
 BUMA.1121.00058,1,chromosomes: 1
-BUMA.1121.00059,2,chromosomes: 2
+BUMA.1121.00059,1,chromosomes: 1
 BUMA.1121.00060,1,chromosomes: 1
 BUMA.1121.00061,1,chromosomes: 1
 BUMA.1121.00062,1,chromosomes: 1
@@ -70,7 +71,7 @@ BUMA.1121.00100,1,chromosomes: 1
 BUMA.1121.00101,1,chromosomes: 1
 BUMA.1121.00102,1,chromosomes: 1
 BUMA.1121.00103,1,chromosomes: 1
-BUMA.1121.00104,2,chromosomes: 2
+BUMA.1121.00104,1,chromosomes: 1
 BUMA.1121.00105,1,chromosomes: 1
 BUMA.1121.00106,1,chromosomes: 1
 BUMA.1121.00107,1,chromosomes: 1
@@ -79,4 +80,3 @@ BUMA.1121.00109,1,chromosomes: 1
 BUMA.1121.00110,1,chromosomes: 1
 BUMA.1121.00111,1,chromosomes: 1
 BUMA.1121.00112,1,chromosomes: 1
-BUMA.1121.00003,0,no copies

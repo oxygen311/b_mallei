@@ -1,59 +1,59 @@
-[2022-03-30 17:18:28,626] INFO - <Running module: Preprocess Data>
-[2022-03-30 17:18:28,805] INFO - Converting block coords to infercars format
-[2022-03-30 17:18:29,943] INFO - <Module finished: Preprocess Data>, elapsed 1.3165020942687988 seconds
-[2022-03-30 17:18:29,943] INFO - <Running module: Parsers and check strains>
-[2022-03-30 17:18:30,550] INFO - Blocks count: 1204
-[2022-03-30 17:18:30,550] INFO - Unique one-copy blocks count: 618
-[2022-03-30 17:18:30,555] INFO - Mean block coverage: 90.55522984764536 %
-[2022-03-30 17:18:30,559] INFO - Mean common one-copy blocks coverage: 60.16618492764842 %
-[2022-03-30 17:18:30,563] INFO - Mean 80 % rate one-copy blocks coverage: 75.59674910287059 %
-[2022-03-30 17:18:30,593] INFO - Strains in blocks file count: 31
-[2022-03-30 17:18:30,593] INFO - Strains in tree leafs count: 112
-[2022-03-30 17:18:30,593] INFO - Intersected strains count: 31
-[2022-03-30 17:18:30,593] WARNING - PRUNING TREE
-[2022-03-30 17:18:30,593] WARNING - Those strains are thrown away from tree because there were not found in blocks data: BUMA.1121.00059, BUMA.1121.00039, BUMA.1121.00112, BUMA.1121.00090, BUMA.1121.00027, BUMA.1121.00051, BUMA.1121.00029, BUMA.1121.00102, BUMA.1121.00106, BUMA.1121.00070, BUMA.1121.00023, BUMA.1121.00056, BUMA.1121.00025, BUMA.1121.00079, BUMA.1121.00018, BUMA.1121.00104, BUMA.1121.00016, BUMA.1121.00012, BUMA.1121.00045, BUMA.1121.00057, BUMA.1121.00005, BUMA.1121.00110, BUMA.1121.00073, BUMA.1121.00077, BUMA.1121.00053, BUMA.1121.00009, BUMA.1121.00001, BUMA.1121.00062, BUMA.1121.00108, BUMA.1121.00098, BUMA.1121.00011, BUMA.1121.00080, BUMA.1121.00076, BUMA.1121.00082, BUMA.1121.00043, BUMA.1121.00055, BUMA.1121.00014, BUMA.1121.00078, BUMA.1121.00066, BUMA.1121.00094, BUMA.1121.00103, BUMA.1121.00109, BUMA.1121.00033, BUMA.1121.00084, BUMA.1121.00072, BUMA.1121.00100, BUMA.1121.00003, BUMA.1121.00107, BUMA.1121.00083, BUMA.1121.00105, BUMA.1121.00065, BUMA.1121.00063, BUMA.1121.00101, BUMA.1121.00092, BUMA.1121.00097, BUMA.1121.00071, BUMA.1121.00089, BUMA.1121.00007, BUMA.1121.00091, BUMA.1121.00068, BUMA.1121.00075, BUMA.1121.00099, BUMA.1121.00047, BUMA.1121.00069, BUMA.1121.00035, BUMA.1121.00088, BUMA.1121.00049, BUMA.1121.00041, BUMA.1121.00061, BUMA.1121.00037, BUMA.1121.00096, BUMA.1121.00067, BUMA.1121.00064, BUMA.1121.00021, BUMA.1121.00074, BUMA.1121.00031, BUMA.1121.00060, BUMA.1121.00058, BUMA.1121.00095, BUMA.1121.00111, BUMA.1121.00093
-[2022-03-30 17:18:30,595] INFO - <Module finished: Parsers and check strains>, elapsed 0.6526920795440674 seconds
-[2022-03-30 17:18:30,595] INFO - <Running module: Balanced rearrangements characters>
-[2022-03-30 17:18:31,439] INFO - Breakpoint graph parsed
-[2022-03-30 17:18:31,444] INFO - Edges in breakpoint graph: 1078
-[2022-03-30 17:18:31,456] INFO - Getting characters from breakpoint graph component, size=108
-[2022-03-30 17:18:31,637] INFO - Getting characters from breakpoint graph component, size=4
-[2022-03-30 17:18:31,651] INFO - Getting characters from breakpoint graph component, size=40
-[2022-03-30 17:18:31,696] INFO - Getting characters from breakpoint graph component, size=6
-[2022-03-30 17:18:31,702] INFO - Getting characters from breakpoint graph component, size=10
-[2022-03-30 17:18:31,709] INFO - Getting characters from breakpoint graph component, size=10
-[2022-03-30 17:18:31,726] INFO - Getting characters from breakpoint graph component, size=48
-[2022-03-30 17:18:31,786] INFO - Getting characters from breakpoint graph component, size=4
-[2022-03-30 17:18:31,797] INFO - Getting characters from breakpoint graph component, size=4
-[2022-03-30 17:18:31,800] INFO - <Module finished: Balanced rearrangements characters>, elapsed 1.2049920558929443 seconds
-[2022-03-30 17:18:31,800] INFO - <Running module: Balanced rearrangements stats>
-[2022-03-30 17:18:31,800] INFO - Counting distances between unique one-copy blocks, may take a while
-[2022-03-30 17:18:46,977] INFO - Got characters after breakpoint graph consideration: 105
-[2022-03-30 17:18:46,979] INFO - Percentage of consistent rearrangements (balanced): 54.285714285714285 %
-[2022-03-30 17:18:47,073] INFO - <Module finished: Balanced rearrangements stats>, elapsed 15.272455930709839 seconds
-[2022-03-30 17:18:47,073] INFO - <Running module: Balanced rearrangements output>
-[2022-03-30 17:18:54,337] INFO - <Module finished: Balanced rearrangements output>, elapsed 7.263603925704956 seconds
-[2022-03-30 17:18:54,337] INFO - <Running module: Unbalanced rearrangements characters>
-[2022-03-30 17:18:54,341] INFO - <Module finished: Unbalanced rearrangements characters>, elapsed 0.004027843475341797 seconds
-[2022-03-30 17:18:54,341] INFO - <Running module: Unbalanced rearrangements stats and clustering>
-[2022-03-30 17:18:54,510] INFO - Got characters after copy number variation consideration: 1204
-[2022-03-30 17:18:54,510] INFO - Percentage of consistent rearrangements (unbalanced): 88.60518701103847 %
-[2022-03-30 17:18:54,510] INFO - Counting distances between non-convex character blocks, may take a while
-[2022-03-30 17:19:22,923] INFO - Jaccard index matrix constructed
-[2022-03-30 17:19:36,385] INFO - Proximity matrix constructed
-[2022-03-30 17:19:36,409] INFO - Clustring is done
-[2022-03-30 17:19:36,410] INFO - Clusters: 183
-[2022-03-30 17:19:36,623] INFO - <Module finished: Unbalanced rearrangements stats and clustering>, elapsed 42.282443046569824 seconds
-[2022-03-30 17:19:36,624] INFO - <Running module: Unbalanced rearrangements output>
-[2022-03-30 17:19:53,099] INFO - <Module finished: Unbalanced rearrangements output>, elapsed 16.475671768188477 seconds
-[2022-03-30 17:19:53,099] INFO - <Running module: Which chromosome characters>
-[2022-03-30 17:19:55,190] INFO - <Module finished: Which chromosome characters>, elapsed 2.0899770259857178 seconds
-[2022-03-30 17:19:55,190] INFO - <Running module: Which chromosome stats and clustering>
-[2022-03-30 17:19:55,337] INFO - Got characters after which chromosome consideration: 1204
-[2022-03-30 17:19:55,338] INFO - Percentage of consistent rearrangements (unbalanced): 75.83056478405315 %
-[2022-03-30 17:19:55,338] INFO - <Module finished: Which chromosome stats and clustering>, elapsed 0.14872097969055176 seconds
-[2022-03-30 17:19:55,338] INFO - <Running module: Which chromosome output>
-[2022-03-30 17:21:06,643] INFO - <Module finished: Which chromosome output>, elapsed 71.30444097518921 seconds
-[2022-03-30 17:21:06,643] INFO - <Running module: Visualize neighbours output>
-[2022-03-30 17:21:37,333] INFO - <Module finished: Visualize neighbours output>, elapsed 30.689353942871094 seconds
-[2022-03-30 17:21:37,333] INFO - Total elapsed time: 188.7070541381836 seconds
+[2022-03-30 20:35:35,109] INFO - <Running module: Preprocess Data>
+[2022-03-30 20:35:35,295] INFO - Converting block coords to infercars format
+[2022-03-30 20:35:36,422] INFO - <Module finished: Preprocess Data>, elapsed 1.3127429485321045 seconds
+[2022-03-30 20:35:36,422] INFO - <Running module: Parsers and check strains>
+[2022-03-30 20:35:37,055] INFO - Blocks count: 1204
+[2022-03-30 20:35:37,055] INFO - Unique one-copy blocks count: 618
+[2022-03-30 20:35:37,060] INFO - Mean block coverage: 90.55522984764536 %
+[2022-03-30 20:35:37,065] INFO - Mean common one-copy blocks coverage: 60.16618492764842 %
+[2022-03-30 20:35:37,069] INFO - Mean 80 % rate one-copy blocks coverage: 75.59674910287059 %
+[2022-03-30 20:35:37,100] INFO - Strains in blocks file count: 31
+[2022-03-30 20:35:37,100] INFO - Strains in tree leafs count: 112
+[2022-03-30 20:35:37,100] INFO - Intersected strains count: 31
+[2022-03-30 20:35:37,100] WARNING - PRUNING TREE
+[2022-03-30 20:35:37,100] WARNING - Those strains are thrown away from tree because there were not found in blocks data: BUMA.1121.00106, BUMA.1121.00058, BUMA.1121.00016, BUMA.1121.00072, BUMA.1121.00068, BUMA.1121.00108, BUMA.1121.00055, BUMA.1121.00025, BUMA.1121.00056, BUMA.1121.00031, BUMA.1121.00071, BUMA.1121.00003, BUMA.1121.00060, BUMA.1121.00063, BUMA.1121.00018, BUMA.1121.00070, BUMA.1121.00091, BUMA.1121.00080, BUMA.1121.00045, BUMA.1121.00066, BUMA.1121.00043, BUMA.1121.00005, BUMA.1121.00011, BUMA.1121.00100, BUMA.1121.00084, BUMA.1121.00074, BUMA.1121.00039, BUMA.1121.00102, BUMA.1121.00001, BUMA.1121.00103, BUMA.1121.00073, BUMA.1121.00069, BUMA.1121.00033, BUMA.1121.00110, BUMA.1121.00023, BUMA.1121.00105, BUMA.1121.00009, BUMA.1121.00111, BUMA.1121.00029, BUMA.1121.00112, BUMA.1121.00064, BUMA.1121.00075, BUMA.1121.00047, BUMA.1121.00049, BUMA.1121.00095, BUMA.1121.00014, BUMA.1121.00057, BUMA.1121.00079, BUMA.1121.00093, BUMA.1121.00051, BUMA.1121.00012, BUMA.1121.00077, BUMA.1121.00083, BUMA.1121.00096, BUMA.1121.00101, BUMA.1121.00098, BUMA.1121.00059, BUMA.1121.00094, BUMA.1121.00053, BUMA.1121.00104, BUMA.1121.00076, BUMA.1121.00035, BUMA.1121.00027, BUMA.1121.00061, BUMA.1121.00088, BUMA.1121.00099, BUMA.1121.00109, BUMA.1121.00062, BUMA.1121.00065, BUMA.1121.00021, BUMA.1121.00007, BUMA.1121.00078, BUMA.1121.00037, BUMA.1121.00090, BUMA.1121.00067, BUMA.1121.00089, BUMA.1121.00082, BUMA.1121.00107, BUMA.1121.00041, BUMA.1121.00097, BUMA.1121.00092
+[2022-03-30 20:35:37,102] INFO - <Module finished: Parsers and check strains>, elapsed 0.6803739070892334 seconds
+[2022-03-30 20:35:37,102] INFO - <Running module: Balanced rearrangements characters>
+[2022-03-30 20:35:37,970] INFO - Breakpoint graph parsed
+[2022-03-30 20:35:37,975] INFO - Edges in breakpoint graph: 1078
+[2022-03-30 20:35:37,988] INFO - Getting characters from breakpoint graph component, size=108
+[2022-03-30 20:35:38,179] INFO - Getting characters from breakpoint graph component, size=4
+[2022-03-30 20:35:38,194] INFO - Getting characters from breakpoint graph component, size=40
+[2022-03-30 20:35:38,238] INFO - Getting characters from breakpoint graph component, size=6
+[2022-03-30 20:35:38,245] INFO - Getting characters from breakpoint graph component, size=10
+[2022-03-30 20:35:38,251] INFO - Getting characters from breakpoint graph component, size=10
+[2022-03-30 20:35:38,268] INFO - Getting characters from breakpoint graph component, size=48
+[2022-03-30 20:35:38,329] INFO - Getting characters from breakpoint graph component, size=4
+[2022-03-30 20:35:38,340] INFO - Getting characters from breakpoint graph component, size=4
+[2022-03-30 20:35:38,344] INFO - <Module finished: Balanced rearrangements characters>, elapsed 1.2412190437316895 seconds
+[2022-03-30 20:35:38,344] INFO - <Running module: Balanced rearrangements stats>
+[2022-03-30 20:35:38,344] INFO - Counting distances between unique one-copy blocks, may take a while
+[2022-03-30 20:35:53,475] INFO - Got characters after breakpoint graph consideration: 105
+[2022-03-30 20:35:53,475] INFO - Percentage of consistent rearrangements (balanced): 54.285714285714285 %
+[2022-03-30 20:35:53,575] INFO - <Module finished: Balanced rearrangements stats>, elapsed 15.230849027633667 seconds
+[2022-03-30 20:35:53,575] INFO - <Running module: Balanced rearrangements output>
+[2022-03-30 20:35:59,817] INFO - <Module finished: Balanced rearrangements output>, elapsed 6.242232084274292 seconds
+[2022-03-30 20:35:59,817] INFO - <Running module: Unbalanced rearrangements characters>
+[2022-03-30 20:35:59,821] INFO - <Module finished: Unbalanced rearrangements characters>, elapsed 0.0035791397094726562 seconds
+[2022-03-30 20:35:59,821] INFO - <Running module: Unbalanced rearrangements stats and clustering>
+[2022-03-30 20:35:59,973] INFO - Got characters after copy number variation consideration: 1204
+[2022-03-30 20:35:59,974] INFO - Percentage of consistent rearrangements (unbalanced): 88.60518701103847 %
+[2022-03-30 20:35:59,974] INFO - Counting distances between non-convex character blocks, may take a while
+[2022-03-30 20:36:27,698] INFO - Jaccard index matrix constructed
+[2022-03-30 20:36:41,026] INFO - Proximity matrix constructed
+[2022-03-30 20:36:41,054] INFO - Clustring is done
+[2022-03-30 20:36:41,055] INFO - Clusters: 183
+[2022-03-30 20:36:41,265] INFO - <Module finished: Unbalanced rearrangements stats and clustering>, elapsed 41.444074869155884 seconds
+[2022-03-30 20:36:41,265] INFO - <Running module: Unbalanced rearrangements output>
+[2022-03-30 20:36:57,549] INFO - <Module finished: Unbalanced rearrangements output>, elapsed 16.28437113761902 seconds
+[2022-03-30 20:36:57,549] INFO - <Running module: Which chromosome characters>
+[2022-03-30 20:36:59,762] INFO - <Module finished: Which chromosome characters>, elapsed 2.2125000953674316 seconds
+[2022-03-30 20:36:59,762] INFO - <Running module: Which chromosome stats and clustering>
+[2022-03-30 20:36:59,915] INFO - Got characters after which chromosome consideration: 1204
+[2022-03-30 20:36:59,916] INFO - Percentage of consistent rearrangements (unbalanced): 75.83056478405315 %
+[2022-03-30 20:36:59,916] INFO - <Module finished: Which chromosome stats and clustering>, elapsed 0.15425992012023926 seconds
+[2022-03-30 20:36:59,916] INFO - <Running module: Which chromosome output>
+[2022-03-30 20:38:12,471] INFO - <Module finished: Which chromosome output>, elapsed 72.55493807792664 seconds
+[2022-03-30 20:38:12,471] INFO - <Running module: Visualize neighbours output>
+[2022-03-30 20:38:45,349] INFO - <Module finished: Visualize neighbours output>, elapsed 32.877288818359375 seconds
+[2022-03-30 20:38:45,349] INFO - Total elapsed time: 190.54734587669373 seconds
