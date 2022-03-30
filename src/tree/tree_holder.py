@@ -8,6 +8,7 @@ import math
 import matplotlib.cm
 
 import numpy as np
+import pandas as pd
 
 from parebrick.tree.neighbours_utils import generate_neighbour_face, align_neighbours, get_offsets
 
@@ -26,7 +27,8 @@ class TreeHolder:
 
         for node in self.tree.traverse():
             # Hide node circles
-            node.img_style['size'] = 0
+            ns = NodeStyle(size=0, vt_line_width=1, hz_line_width=1)
+            node.set_style(ns)
 
             if node.is_leaf():
                 try:
@@ -65,10 +67,7 @@ class TreeHolder:
         #     return diff
 
         def color_nodes(v, parent):
-            nonlocal max_stat
-            nstyle = NodeStyle()
-            nstyle["size"] = 0
-            v.set_style(nstyle)
+            nonlocal max_stat, loses_df
 
             diffs = np.array(calculate_diffs(v, parent))
             diffs = np.max([diffs, [0, 0]], axis=0)
@@ -76,7 +75,10 @@ class TreeHolder:
             # diff = max(calculate_diffs(v, parent), 0)
 
             branch_length = self.tree.get_distance(v, parent)
-            scale = 1e-4
+            root_length = self.tree.get_distance(root, v)
+
+            if v.name != 'BUMA.1121.00078':
+                loses_df.append([v.name, root_length, branch_length, *diffs])
 
             stat = math.sqrt(sum(diffs) * scale)
             # stat = math.sqrt(diff * scale)
@@ -92,17 +94,22 @@ class TreeHolder:
         # assign colors
         root = self.tree.get_tree_root()
         max_stat = 0
+        loses_df = []
 
         some_mallei_node = self.tree & 'BUMA.1121.00036'
-        some_pmallei_node = self.tree & 'BUMA.1121.00111'
+        # some_pmallei_node = self.tree & 'BUMA.1121.00111'
+        scale = 3e-4
 
         for child in root.get_children():
             color_nodes(child, root)
             print('hey!', len(child.get_leaves()))
 
+        loses_df = pd.DataFrame(loses_df, columns=['name', 'root_length', 'branch_length', 'losses_chr1', 'losses_chr2'])
+        loses_df.to_csv('losses_tree_3000.csv', index=False)
+
         print('Root length:', get_genome_sizes(root))
         print('Some mallei length:', get_genome_sizes(some_mallei_node))
-        print('Some pseudimallei length:', get_genome_sizes(some_pmallei_node))
+        # print('Some pseudimallei length:', get_genome_sizes(some_pmallei_node))
 
         print('Max stat:', max_stat)
 
@@ -114,6 +121,22 @@ class TreeHolder:
         ts.show_branch_support = show_branch_support
         # ts.branch_vertical_margin = 20
         ts.show_scale = show_scale
+
+        # set legend
+
+        for i, lost in enumerate([100000, 200000, 400000, 800000, 1600000]):
+            stat = math.sqrt(lost * scale)
+            pcf = PieChartFace([100, 0], stat, stat)
+            pcf.margin_left = 20
+            pcf.margin_right = 5
+            ts.legend.add_face(pcf, column=i * 2)
+            ts.legend.add_face(TextFace(f'{lost} nucleotides', fsize=10), column=i * 2 + 1)
+
+        for chr in [1, 2]:
+            pcf = PieChartFace([100 if chr == 1 else 0, 0 if chr == 1 else 100], max_stat / 2, max_stat / 2)
+            pcf.margin_left = 20
+            ts.legend.add_face(pcf, column=(chr - 1) * 2)
+            ts.legend.add_face(TextFace(f'Chromosome {chr}', fsize=10), column=(chr - 1) * 2 + 1)
 
         self.tree.render(file, w=1000, tree_style=ts)
 

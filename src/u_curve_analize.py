@@ -2,10 +2,10 @@ from src.utils.parsers import parse_infercars_to_df, make_labels_dict, get_genom
 
 import json
 
-res = 5000
+res = 3000
 species = 'pseudomallei'
-data_folder = 'data/Burkholderia_pseudo_mallei/7-sibeliaz/infercars/%d/' % res
-INFERCARS_FILENAME = 'blocks_coords_%s.infercars' % species
+data_folder = 'data/Burkholderia_pseudo_mallei/7-sibeliaz/infercars_old/%d/' % res
+INFERCARS_FILENAME = 'blocks_coords_%s.infercars_old' % species
 THRESHHOLD = 20
 
 labels_file = 'data/Burkholderia_pseudo_mallei/labels.csv'
@@ -13,6 +13,8 @@ labels_file = 'data/Burkholderia_pseudo_mallei/labels.csv'
 df_blocks = parse_infercars_to_df(data_folder + INFERCARS_FILENAME)
 
 block_count = df_blocks.groupby('block')['species'].nunique().sort_values()
+for i, v in block_count.iteritems():
+    print(i, v)
 
 allowed_blocks = [b for b, copies in block_count.iteritems() if copies >= THRESHHOLD]
 

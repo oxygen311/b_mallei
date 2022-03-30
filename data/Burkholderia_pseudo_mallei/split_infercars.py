@@ -2,9 +2,9 @@ from parebrick.utils.data.parsers import parse_infercars_to_df, export_df_to_inf
 
 import pandas as pd
 
-file = '7-sibeliaz/infercars/1000/blocks_coords.infercars'
-file_pseudomallei = file.replace('.infercars', '_pseudomallei.infercars')
-file_mallei = file.replace('.infercars', '_mallei.infercars')
+file = '7-sibeliaz/infercars_old/1000/blocks_coords.infercars'
+file_pseudomallei = file.replace('.infercars_old', '_pseudomallei.infercars_old')
+file_mallei = file.replace('.infercars_old', '_mallei.infercars_old')
 
 df = parse_infercars_to_df(file)
 

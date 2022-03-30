@@ -4,25 +4,31 @@ from src.tree.tree_holder import TreeHolder
 
 import logging
 import json
+import pandas as pd
 
 logger = logging.getLogger()
 
-res = 5000
-mode = 'c'
-data_folder = 'data/Burkholderia_pseudo_mallei/7-sibeliaz/sibeliaz_out/fine/%d/' % res
+res = 3000
+mode = 'r'
+data_folder = 'data/Burkholderia_pseudo_mallei/7-sibeliaz/sibeliaz_out_all/fine/%d/' % res
 GRIMM_FILENAME = 'genomes_permutations.txt'
 BLOCKS_COORD_FILENAME = 'blocks_coords.txt'
-INFERCARS_FILENAME = 'blocks_coords.infercars'
+INFERCARS_FILENAME = 'blocks_coords.infercars_old'
 
-ALLOWED_BLOCKS_FILE = 'data/Burkholderia_pseudo_mallei/7-sibeliaz/infercars/%d/allowed_blocks_20.json' % res
+ALLOWED_BLOCKS_FILE = 'data/Burkholderia_pseudo_mallei/7-sibeliaz/infercars_old/%d/allowed_blocks_20.json' % res
 
 tree_file = 'data/Burkholderia_pseudo_mallei/6-tree_module/BUMA_112.nucl.grp.aln.iqtree_tree_right_root.treefile'
 labels_file = 'data/Burkholderia_pseudo_mallei/labels.csv'
 
-# Press the green button in the gutter to run the script.
+def prune_mallei(tree_holder):
+    labels = pd.read_csv('data/Burkholderia_pseudo_mallei/labels.csv')
+    mallei = [strain for strain, label in zip(labels['strain'], labels['label']) if 'pseudomallei' not in label
+                                                                                    or 'VB29710' in label]
+    tree_holder.tree.prune(mallei)
+
 if __name__ == '__main__':
     # parsing
-    tree_holder = TreeHolder(tree_file, logger, labels_dict=make_labels_dict(labels_file))
+    tree_holder = TreeHolder(tree_file, logger, labels_dict=make_labels_dict(labels_file), scale=300000)
 
     with open(ALLOWED_BLOCKS_FILE) as json_file:
         allowed_blocks = set(json.load(json_file))
@@ -42,4 +48,5 @@ if __name__ == '__main__':
 
     # # processing?
     tree_holder.recover_internal_states(genomes_to_blocks)
-    tree_holder.draw('tree_losses_2chr_%d_%s.pdf' % (res, mode), block_to_length, mode=mode, show_branch_support=False)
+    prune_mallei(tree_holder)
+    tree_holder.draw('mallei_tree_losses_2chr_%d_%s.pdf' % (res, mode), block_to_length, mode=mode, show_branch_support=False)
